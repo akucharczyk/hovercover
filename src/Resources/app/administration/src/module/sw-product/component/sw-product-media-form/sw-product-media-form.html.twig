@@ -1,0 +1,15 @@
+{% block sw_product_media_form_grid_items %}
+    <sw-product-image
+        v-for="mediaItem in mediaItems"
+        :key="mediaItem.id"
+        :isCover="isCover(mediaItem)"
+        :isHoverCover="isHoverCover(mediaItem)"
+        :isPlaceholder="mediaItem.isPlaceholder"
+        :mediaId="mediaItem.mediaId"
+        v-draggable="{ dragGroup: 'product-media', data: mediaItem, onDragEnter: onMediaItemDragSort }"
+        v-droppable="{ dragGroup: 'product-media', data: mediaItem }"
+        @sw-product-image-delete="removeFile(mediaItem)"
+        @sw-product-image-cover="markMediaAsCover(mediaItem)"
+        @sw-product-image-hover-cover="markMediaAsHoverCover(mediaItem)">
+    </sw-product-image>
+{% endblock %}

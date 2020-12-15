@@ -1,0 +1,32 @@
+{
+  "global": {
+    "sw-product-image": {
+      "context": {
+        "buttonAsHoverCover": "Als zweites Cover nutzen"
+      }
+    }
+  },
+  "sw-product": {
+    "mediaForm": {
+      "coverSubline": "1. Cover",
+      "hoverCoverSubline": "2. Cover"
+    }
+  },
+  "sw-cms": {
+    "blocks": {
+      "sidebar": {
+        "sidebarFilterWithCoverSwitch": {
+          "label": "Produkt-Filter mit Cover schalter"
+        }
+      }
+    },
+    "elements": {
+      "sidebarFilterWithCoverSwitch": {
+        "label": "Produkt-Filter mit Cover schalter",
+        "infoText": {
+          "filterElement": "Die Filterdaten für dieses Element werden automatisiert befüllt. Der Inhalt zeigt nur eine ungefähre Vorschau."
+        }
+      }
+    }
+  }
+}

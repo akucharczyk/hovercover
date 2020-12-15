@@ -1,0 +1,36 @@
+{
+    "name": "antoni/hover-cover",
+    "description": "HoverCover Module for Shopware 6",
+    "type": "shopware-platform-plugin",
+    "license": "proprietary",
+    "version": "v1.1.1",
+    "authors": [
+        {
+            "name": "Antoni Kucharczyk",
+            "homepage": "https://antoni.work",
+            "email": "shopware@antoni.work"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Antoni\\HoverCover\\": "src/"
+        }
+    },
+    "require": {
+        "shopware/core": "*",
+        "shopware/administration": "*",
+        "shopware/storefront": "*"
+    },
+    "extra": {
+        "shopware-plugin-class": "Antoni\\HoverCover\\HoverCover",
+        "copyright": "(c) by Antoni Kucharczyk",
+        "label": {
+            "de-DE": "Hover Cover",
+            "en-GB": "Hover Cover"
+        },
+        "description": {
+            "de-DE": "HoverCover Plugin spielend leicht ein zweites Produkt Cover hinzufügen",
+            "en-GB": "HoverCover Plugin add easily a second product cover"
+        }
+    }
+}

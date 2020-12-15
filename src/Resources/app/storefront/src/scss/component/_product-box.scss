@@ -1,0 +1,15 @@
+.has-hover-thumbnail {
+  .hover-thumbnail {
+    display: none;
+  }
+  
+  &.hover-thumbnail-active {
+    .product-image {
+      display: none;
+    }
+
+    .hover-thumbnail {
+      display: block;
+    }
+  }
+}

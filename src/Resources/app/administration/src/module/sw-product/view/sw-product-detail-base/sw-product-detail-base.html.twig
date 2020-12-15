@@ -1,0 +1,12 @@
+{% block sw_product_detail_base_media_card_form %}
+    <sw-product-media-form 
+        v-if="mediaFormVisible" 
+        :productid="isInherited ? parentProduct.id : product.id"
+        :key="isInherited"
+        :isInherited="isInherited"
+        :disabled="isInherited"
+        @media-drop="$emit('media-drop', $event)"
+        @cover-change="$emit('cover-change', $event)"
+        @hover-cover-change="$emit('hover-cover-change', $event)">
+    </sw-product-media-form>
+{% endblock %}
